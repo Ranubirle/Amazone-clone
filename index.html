@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon | Acciojob</title>
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/amazon-logo-white-background-montreal-canada-july-printed-paper-98221126.jpg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* BODY */
+body {
+    background-color: gray;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+.header .header-nav {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+.header .header-nav .header-container {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header-nav .header-container .amazon-logo {
+    width: 100px;
+}
+.header .header-nav .header-container .header-search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.header .header-nav .header-container .header-search .search-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid yellow;
+    /* border-radius: 5px; */
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.header .header-nav .header-container .header-search .search-button {
+    width: 40px;
+    height: 42px;
+    /* border-radius: 5px; */
+    background-color: var(--amazon-major-color);
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #232323;
+}
+.header .header-nav .header-container .header-cart {
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-nav .header-container .header-cart svg {
+    width: 40px;
+    height: 40px;
+}
+
+/* SECTION 1 */
+.section-1 {
+    width: 100%;
+    height: auto;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/Aug/Apay/GW-PC-Deals-Unrec-3000._CB629506848_.jpg');
+    background-size: cover;
+    display: flex;
+}
+.section-1 .section-1-container {
+    margin-top: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.section-1 .section-1-container .section-1-column {
+    width: 100%;
+    /* height: 300px; */
+    background-color: white;
+    padding: 20px;
+}
+
+.section-1 .section-1-container .section-1-column img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.section-1 .section-1-container .section-1-column p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007185;
+}
+.section-1 .section-1-container .section-1-column button {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    background-color: var(--amazon-major-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* SECTION 2 */
+.section-2 {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.section-2 .section-2-container h3 {
+    margin-bottom: 10px;
+}
+.section-2 .section-2-container .product-cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.section-2 .section-2-container .product-card {
+    display: inline-block;
+    width: 300px !important;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 .section-2-container .product-card img {
+    width: auto;
+    height: auto;
+    max-width: 270px;
+    max-height: 200px;
+}
+
+/* SECTION 3 */
+.section-3 {
+    background-color: white;
+}
+.section-3 .section-3-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.section-3 .section-3-container .product-detail-cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.section-3 .section-3-container .product-detail-cards .product-detail-card {
+    display: inline-block;
+    width: 200px !important;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+.section-3 .section-3-container .product-detail-cards .product-detail-card .product-detail-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-3 .section-3-container .product-detail-cards .product-detail-card img {
+    width: 100%;
+    height: auto;
+    max-width: 160px;
+    max-height: 140px;
+}
+.section-3 .section-3-container .product-detail-cards .product-detail-card a {
+    text-decoration: none;
+    color: #007185;
+    font-size: 14px; ;
+}
+.section-3 .section-3-container .product-detail-cards .product-detail-card a:hover {
+    color: #c45500;
+}
+.section-3 .section-3-container .product-detail-cards .product-detail-card .product-deliver-by {
+    color: #222;
+    font-size: 10px;
+}
+
+/* SECTION 4 */
+.section-4 {
+    /* background-color: white; */
+    padding: 20px;
+}
+.section-4 .section-4-container {
+    /* border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-4 .section-4-container p{
+    margin: 4px;
+    font-size: 14px;
+}
+.section-4 .section-4-container button{
+    width: 300px;
+    border: none;
+    background-color: var(--amazon-major-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: var(--major-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-container">
+                <img class="amazon-logo" src="https://mlsvc01-prod.s3.amazonaws.com/fd4e81f3101/a77159a6-cbf4-46a1-a731-522b77da3e42.png?ver=1649349594000" alt="Amazon Logo">
+                <div class="header-search">
+                    <input class="search-input" type="text" placeholder="search-items..">
+                    <button class="search-button" >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-cart">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                    </div>
+                    <p>Cart</p>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION 1 -->
+    <section class="section-1">
+        <div class="section-1-container">
+            <div class="section-1-column">
+                <h3>Top picks for your home-decor</h3>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg" alt="">
+                <p>See more</p>
+            </div>
+            <div class="section-1-column">
+                <h3>Top rated, premium quality | Amazon Brands & more</h3>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUUFRgSFhIYGBYZGhgWHBYYFRgYGBgcHBgaGRkYGhkcIS4mHCEsIxgcJjgmLS8xNTU1GiU7QDszPy40NTEBDAwMEA8QHxISHzQhJSwxNzc/NDE0NDE3MTQ0NTY0PTQ0PjQ0NTQ0MTQ0NjQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAM0A9gMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUDBgcBAgj/xABEEAACAQIDBQUEBgcHBAMAAAABAgADEQQSIQUxQVFxBiJhgZETMqGxB0JUgsHSF1JicpKy8RQVIyQz0fBzs8LDY5Oi/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECBAMF/8QAJhEBAQACAgEDBAMBAQAAAAAAAAECEQMhMQQSQSJhcYETMlEUM//aAAwDAQACEQMRAD8A7NERAREQEREBERAREQEREBETDXqqis7GyqCxPIAXJ9BAqtu9psJggDiK6oSCwXVnYDS4VQTbxnG+2P0lV8U7U8NUelh7Aad2o3MswN1HgD15TUdu7XbF16mKqMczsWAP1V+og8FWw+PGYMJsitU7yU2IPGxlbZPK2ONvhmp453PeqOTxJd/K+uusvOzvbDG7PIK1Wq0b2NGo5YHiSp1KHXeNOYMqH7M4oa+xfdfQX0mA0nT/AAnVka17EWNvARMpfCbjZ5j9Ndm9tU8bh6eKp3CuDdW95WUlWU9CD13y2nE/oO2uKdavgmY98LURSdMy5hUsOZXL/BO2SyhERAREQEREBERAREQEREBERAREQEREBERAREQEREDyRscgam6kXBVgRzBUgiSZrPbnaT0KClDlzVArMfqrlZ214XyZfvSLdTacZbZI/PGxcGarqoFzofhqTOpbMyCyZluOFxf0lF2Z2SqvUZb5bqqX35cisd+u828plxewWZ9aSZL63QlrfrBl3G/OZs7Mq28eFxjoOEp2AMru0mx6eJplHQA2NnGjKbaMDKfs09ajSqhizGmCVGYtcAbgTI2C7Q4moe9kfUjJkem4AIvlZtH0PDw5iRPHS189qH6KtkVG2mHKkrhi+dtNCUqIm/fc3n6Cmtdh9hJhaBcD/Ersazsd/eJZE8Aqta3O54zZZqnhgvl7ERJQREQEREBERAREQEREBERAREQEREBERAREQEREDyVe39kJi6LUX3N/T5EjzlpEizaZbLuOT08MaLmmxuyHKTe9yON7C8tGrgIx4gE2G86bpA2zU/zFX99v5iJCxIqkA02XkwZSeViNR4+syWdvQwtsWvZ7G03DBXGbRchFjfQ7jrLI7PRCAiC50AHAk2sOUo9nYjEIbGkjD9dCQ2nMMAPxm2bCpGpUzkd1Bfqx3Dy1PpJmO7pXO+2W1smHp5UVL3KqBc7zYWvM0RNbAREQEREBERAREQEREBERAREQEREBERAREQEREBETyAMibTxq0aT1W3KCbczwHmbCRtrbbo4YXd7twRdWPlw6mwmjbX7Rvi7qFyU1bQXuzHKDdju3Nu+cvjhcnLk5scPyo2xL1lSq1s7qHawsMzgM1hwFzJGA2gqNla3nKXDVWov/AGd/dHept+wT7v3d3S0u6Oz0q94gHxmDPG4ZWV6nHljnhLiuK20UIy07Fj9VTf5bpufZ4IKCZfvfvfW+O7wtNHo00plaCAB3uTlFiEHvMeW8AeLCXWB2i2HYjLmViLqDYg2Oo4cLW6TRwYXKXJj9VzzHKY1ucSFgdoU6o7rXI3qdGHUfjuk2dbNOcss3HsREhJERAREQEREBERAREQEREBERAREQEREDyIkDauPWghY6k6KvNjuHTnJk2i2Sbr72htBKC5nNuQGrMeQE1DaO369W4U+yT9k9+3Mtw6C3UyLiKzVWLubsfRRwCjgICf0/EzRhxyeWHk58suseoqcTR3sd511325nxkPZDBkeoSAPaOSSbAAWG89JdYnDl7jykFdgrlCnUb7X0vztOrN2q9oVqGIKUkJaoGujqvduPeW+83HIHhMtCu9IFVIfxvu8DyPWfeJ7PIqlwN2pHTiOREm9lsJ/l8zL3ndm8gcinoQl/vTjycGOd3Wnh9VycWNmOv2hbA2vQp1HevVAq1LLmN/ZoovZA3DmSQBc79JtdVQ4Ug3F1YEG4IvcEHjNO2l2VFdywYrr6zZdkYEUKa0wb2nSYY4TWLllnc77svNfQBVytyD7yMDYjmARuMutn9oXXu1RmXdnUd5f3l49Rr4GVmJp5yRuOhB5GY6Xe1tZhow524yMsZlOzHkywvTfqNVXUMpBU6gjUGZZp+zce1G4AzIdSu6x5qeHSbRg8StRQ67uR3g8QfGZssbi9Dj5ZlPukxESroREQEREBERAREQEREBERAREQEREDyaD2px2evkB0S6j/AMj1vp92bzXqBVZjuUEnyF5yhqxauxO/S/U3J+Jnbhx3bWT1WesZj/qbRqagczb4SVmswHIXMqqdTvIeRv6AybTe5J5zuxyplMXM+3FrT5oTJXXQQnXTDkzA8p5ssAYWkigf6dM5uPuC/kb3mdxZDbkZG2MbYej/ANKn/IsE6fanv2EzOe8JHpm9U23Wv/vM76m8Ee1dGVuZtPGSzZuBvfrMpW4tMeKRgM6C5A1Tg44jwbkZEKyU3BAPMCWfZ/FWc0uYDDqP9wD/AAykoVlIWx0IFulp9UMVkrh+ChL/AHnYfL5yMsdyxfjz9uUrf4ngM9mR6ZERAREQEREBERAREQEREBERAREQKrtDWy0H5tZf4iAfhecqp1P8Rj4zoXbGvolPmSx8hYfM+k5pRe7uJr4J9Neb6vLecn+MVTaGRjc6K5U9Dex+XrNgoVAQCJpm29GblUpk/eX+gmwbDJFJATclQSfEi86VwnXbZsI95L3iVWzH1bpaWdNpSrx7idEboZGwS/5emysNKaC19dUBBA4jSZ8a1kboZh2WM2Gpf9NP5BHwfKNgKmbvbjqD6GTgBKzZBORn/bI9JY06oYZhrwIk1E8JaiRsbiMi5t9radSB8p61awGukoe0ePZaYdRcBu9+yMrWY+F7DzEYztOV66e7KxJqV6pHuU/8NeRJPePoo9TJWPJ9nVcc1A+5b8byq7OMKdNb72BqnxzaJ8APWWm0HCYZieV/M6y98ufw33s/jBWoJUBvpY9RpLKah9HTWw4TiR7TrmJBPwE3CYuTH25WPV4cvdhL9nsREo6kREBERAREQEREBERAREQPIiRNpYsUabVD9UaDmToB6kQi3U3Wl9oMTnrtrovcH3dD/wDotNAw9XvufG3pNsquSSxOpNyfE6kzRsfejWZfqtdlPgTqPKb8JJNPI5LcstvMYj12Skls5Y2uQBu71yeFrnyl9sUEU1v+qLdLT77MbMU4PG45veSlVpU+Ss1Ihm62dQOpnmxwTTT9xR6AA/KR7t2wyxuOONv3X2AFgTLHDbryuo7rScHsLSKtHzijmBXmCPhGxNMPSH/xp8hPFF5k2f3aSJYXFhe2osSNOsik87RNkLkerSO7NmHQ/wDBMeJBovmHuNv8PGTMVSs61h0bpz8pnxNLOhUi+n9JbaNfD4sHUGUm38OrUKyhT/puS17e6pYehAk/ZVTulDvU8RrvmDtICcLXC7yjD4ayfHSPNlazh8Z3/ABVA6Cwlp2uxOWgEvqzKJWVdiVaCYfEtZqVZKThhplZ0DsjDnvseIErtuY81nCg6Bry+5lqxzmOWNuOTpvZB/Z+wXgUCnzFx8QJvU55QYoEI3qFI8rGdARrgEcdZj559W3o+ky+m4/4yRETi1kREBERAREQEREBERAREQPmVnaNM2Gq+Clx1Xvj4rLOUnays64ZxTYK79wMwuBfffqAR4Xk4+Ypnr23bn9XMy5ltY+PwmrbesbBmGYG45jylq5rKCmQ2bQ2e3mri4mv7b2aEAYnKWubEgn+Kwm/4eRO8nTcdWw/9yFsOgpo4pjLvIY1FV8x3sdDqd9prHZ5bJl5HTzk+nTopsemlLECtmrKWYfVcqzlMp1XLYb9+/jI+ykyi05cc+m/l29Rb78fwni4NxvkhMTfQiYw08DSyiehn3h27v3m/naRqLXtJNFLqW0sHcHXm7AaRUztIWe+I6WmOm9hruntQ8pCb4Q8SmWotQbm7rRWTMGU7iCJJuHBU8f+XnwV1senwlpVLHx2zw5GyKOVSfZjDnQbgFyXPh3pyajUAYMd951Ttv2hrYOhhqNMlPaU9aoCsy5QgygEED3t9uk0rstshXvVVMwQ2BuDY7+O6V4dybdfUe3rzvWm8oM1uQAHwm77Kq5qSnwt6afhNKpGpbvBB5k/ACbfsL/QXdvbdzzGc+bw6+l/tfws4iJnbiIiAiIgIiICIiAiIgIiIHko+1iXoX4h1I8d4+RMvJT9p6eagfBlPxt+Mtj/AGjny/0rm2MpVMxamwGb3l4qf1gON5qe3qTgd9y3IFVE3V6Lara3iN5lFt9CinKuttSSSBfwO8zdO3k71dsHZSi7YSoW9xsRTCjxWlUz6dHSXeBBAsRI/ZqkRgEO8vXrPrxslJR8pMN9BYic8b06cs+r9RJVxMyoDukJKLc7TKndPvXkqpVAWMn4Ze6f36n/AHHlclYcdJYYI3S/7T/ztIqcWRUuuWYab2JU+XhM6mfFejnFxviLVhr0+Inwjz6SoR3WHn/vMFVirbtOcvFL0i/SqoL4RSbJkqWI376YPXTLKXYuxaYHtDUYKR3Xpl0cm/JW1G+bH9JGG9phsJULWCkruv3mQH/1mVHZXZQUCqajsB7qliEU8wt7Xkcf9F+b/wBOr8RZ0azo4VVrVEJA76ICnjnLK1v3gT4zbux1FkolWct3za5uRoNM31uvWUnvcdJt2yqGSko42zHz1t+HlOXLetO3p8bctp8REzN5ERAREQEREBERAREQEREDyQNtUS9F1G+1x90hrfCT4MTq7RZuac0qVQq5tLdQPmZW7Vpe0pkqutjymx9odieyPtEIyFt1u8pNyBf9XlKunymzHKWbjyc8MsbZUfB4VqWCwSZTe1eo2m7M4Ivy0PwmQODI+L7S/wBgo16DMWFVH9iBqUqstiLcEObNfgQd+aclRyNNP4R+E5+649aapwzknu3r9OzGgDqDY+O6eDCrxPpOQf2+qBZajrobZajgX6Bp9DaWIG6vW/8Auc/Mx/L9i+kv+uvPhFtofjJPZ+peiyMAXV3RrH3WzBh6qynznHP79xS7sTU8yp+Yl5sztbXQvapTIcq2Z0qXUhbG6ove6k8JP8svSP8Amyxu5ZXVGQHnCpbnOdYntiMwV6lWotiWNJmoqCSLZfdckWOhNtd8pcft/wBo4KNiEQA3U13Ja+46Od3WR/J9lp6a/NdhZL7wD5SM9MMfZqLtYtlHeawtc5Rra5GviOc43X2k7DKKlYjk9V2HoWIm5fQ9WVMVUzWBFJ3LEgKEBQPfxvkPRTI/ls+E/wDLPmr/ALXbYX2H93kAVlCVTmJBALEjKAN9jrc6AnykbBphaCK3vAG443ub3kfEYFMZiXxj0hrlVAw1yKLKzA/WO/wvbhLI4FUJZLi47yg90/tAcG8Rv48Ldcesdftl5O8tzvXSwwFDPUVbab26Df8A7ec3CU3Z3BBENS3efXyG4fj5y5mbky3W7gw9uO78vYiJR3IiICIiAiIgIiICIiAiIgIiIEXHYYVUamdzC1+R3g+RtOX4vEFajUQcroVDn9W9zlHjYb+AI8usTnn0m4MUaVTFoLM4KsR+tkyo3oLeQi5ZSWRE4sMs5cvhx/bu0TiKzvfuAlUHAIDoep3+fhK6eCegy8mpovktPbReeyw8afOGN18z8zPtt0+MJ7vmfnIH3Agz20kegzPhsS9NxURrMPQjTusOINtRI4M9Bgdo2BtFa1BKotZhbxVgbMrdCN/SXFOiXZUG9ja/IcT5C85n9H+PsamHY6MBUAOo07j+oKek6t2PwNZULV0ysGZadzdjTv3WffZiNN97AE6kiUnJZbK58npsbrLHqXzGx0qYVQqiwUAAeAFhMsRKupERAREQEREBERAREQEREBERAREQErdvbJTF0KmGckK4tmFsyneGF+IIllEDmH6G8N9rr+lL8kfobw32uv6UvyTp8Sd0cw/Q5hvtdf0pfkj9DmG+11/Sl+SdPiN0cw/Q5hvtdf0pfkhfocww0GLr891L8s6fEbo5j+h3Dfa6/pS/JH6HcN9rr+lL8k6dEe6jmH6HMN9rr+lL8k9H0O4b7XX9KX5J06I91Gh7B+jShhawrDEVXsCMjhMpuQdcqg/VE3uIkD2IiAiIgIiICIiAiIgf/9k=" alt="">
+            </div>
+            <div class="section-1-column">
+                <h3>Shop & Pay | Earn rewards daily</h3>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_2x._SY608_CB628315133_.jpg" alt="">
+                <p>See more</p>
+            </div>
+            <div class="section-1-column">
+                <h3>Sign in for your best experience</h3>
+                <button>Sign in securely</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2 - Related Items -->
+    <section class="section-2">
+        <div class="section-2-container">
+            <h3>Related to items you've viewed</h3>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/41+hnQCreeL._SX425_.jpg" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61LNnZPoKPS._AC_SY400_.jpg" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71iiXU7HHkL._AC_SY400_.jpg" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61XZQXFQeVL._AC_SY400_.jpg" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/712B4P3yOnL._AC_SY400_.jpg" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/51eTOVYRbTL._AC_SY400_.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECTION 2 - Groceries -->
+    <section class="section-2">
+        <div class="section-2-container">
+            <h3>Best Sellers in Grocery & Gourmet Foods</h3>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="https://navbharattimes.indiatimes.com/thumb/94637799/grocery-items-on-amazon-94637799.jpg?imgsize=104346&width=540&height=405&resizemode=75" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrflg9aSl49d1-kypZi1F4GBN05Hcf5_p92g&usqp=CAU" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbHSR3BhoQy-_SvLAeyfuZ_Fd_HO8-kPEEbg&usqp=CAU" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="data:image/jpeg;base64,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nHwKl7HpU6Tatbr/AJS95DnublLrNs0Mp74mw1U7EYTC1iH1GUqhiAXASBwussPg8MwObTZSYHEFwbAkjSYXcsZNbnNJpGq/Yd9rcFoqVh7rzLQ4HXYEZg55gSJgWmNi14+mXtz5gGgaG0fquH2w4TIBtr3L6DVZTcwsLxl+9fWeK58YGi6xc5sE6bxuPslVOPw7GYrnGkAOFy54AnX8RgWiBxWWFqlrOlNty+bnCyRcROs+N1ZbOw0uytMbzym0we4rpB0fw5JdUDm9q0Ps5snLIyb1Nw2CwzAGscYGlz69Wsqjw5sNq0/9xkdxMrKnzTCXBrr7nfZe4RpBaOY3yPek3W1kBzoMtbJnnEAd5n3KO0rlsQwgDS3+Q8onXC3TJWdRyvdi0YbKo6FPM4DnddXhmQ0BdJ7N4QtY6u4Z2HDX3wOoqFjH5NHH7LciIupUJERERERERERERERERa61IOEOEqvxexaTxGUeUq0REXJ1OhlI7vIuHoVqPQinz/HU/wAl2KLXzTPpHYPstnOv+o9pXG/8Hp/zfjqf5J/wen/N+Op/kuyROaZ9I7AnOv8AqPauN/4RT/m/HU/yR3QemRofx1P8l2SJzTPpHYE51/1HtXG4XZL8MMglzBoCSS3kCSbcls62DIseBHuIOoXWPYDqolXZzDuVbieRsNWqc6JY7a23dETwhZsxD2iDfiuddUaTORg7tFhLfsNV98ztXnzO3gq8+zTCdI1TP+ULb74dneqPM37DfevRVb9hv4nfmrv5nbwT5nbwWbfZ0Nyqn+lqe9/t7yqQ1m/Yb+I/mvDVZ/10/M296vPmdvBPmdvBZjkL+af6Wrz3r9veVzrqoiAQBwEL2ixxsAuiGyG8FLoYNrdAlH2cw7D03Fw2ZeF+9HYtxyEKDsvAZbnVW68AXqvmta0BrRAGQUUmblERFkvERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERF/9k=" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61uohjMdfzL._AC_SY400_.jpg" alt="">
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61oagbcgAtS._AC_SY400_.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECTION 3 -->
+    <section class="section-3">
+        <section class="section-3-container">
+            <h3>Inspired by your browsing history</h3>
+            <div class="product-detail-cards">
+                <div class="product-detail-card">
+                    <div class="product-detail-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/I/61aUBxqc5PL._AC_UL320_SR320,320_.jpg" alt="">
+                    </div>
+                    <a class="product-detail-link" href="./product.html">2021 Apple MacBook Pro (16-inch//41.05 cm, Apple M1 Max chip with 10‑core CPU and 32‑core GPU, 32GB RAM, 1TB SSD) - Space Grey</a>
+                    <p>
+                        <strong class="product-price">₹ 3,99,999.00</strong>
+                    </p>
+                    <p class="product-deliver-by">Get it by <strong>Monday, August 22</strong> 
+                        FREE Delivery over ₹499. Fulfilled by Amazon.
+                    </p>
+                </div>
+                <div class="product-detail-card">
+                    <div class="product-detail-img">
+                        <img src="https://m.media-amazon.com/images/I/71ZOtNdaZCL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                    </div>
+                    <a class="product-detail-link" href="./product.html">2021 Apple MacBook Pro (16-inch//41.05 cm, Apple M1 Max chip with 10‑core CPU and 32‑core GPU, 32GB RAM, 1TB SSD) - Space Grey</a>
+                    <p>
+                        <strong class="product-price">₹ 3,99,999.00</strong>
+                    </p>
+                    <p class="product-deliver-by">Get it by <strong>Monday, August 22</strong> 
+                        FREE Delivery over ₹499. Fulfilled by Amazon.
+                    </p>
+                </div>
+                <div class="product-detail-card">
+                    <div class="product-detail-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/I/61LNnZPoKPS._AC_UL320_SR320,320_.jpg" alt="">
+                    </div>
+                    <a class="product-detail-link" href="./product.html">2021 Apple MacBook Pro (16-inch//41.05 cm, Apple M1 Max chip with 10‑core CPU and 32‑core GPU, 32GB RAM, 1TB SSD) - Space Grey</a>
+                    <p>
+                        <strong class="product-price">₹ 3,99,999.00</strong>
+                    </p>
+                    <p class="product-deliver-by">Get it by <strong>Monday, August 22</strong> 
+                        FREE Delivery over ₹499. Fulfilled by Amazon.
+                    </p>
+                </div>
+                <div class="product-detail-card">
+                    <div class="product-detail-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/I/71hmqIQJFdL._AC_UL320_SR320,320_.jpg" alt="">
+                    </div>
+                    <a class="product-detail-link" href="./product.html">2021 Apple MacBook Pro (16-inch//41.05 cm, Apple M1 Max chip with 10‑core CPU and 32‑core GPU, 32GB RAM, 1TB SSD) - Space Grey</a>
+                    <p>
+                        <strong class="product-price">₹ 3,99,999.00</strong>
+                    </p>
+                    <p class="product-deliver-by">Get it by <strong>Monday, August 22</strong> 
+                        FREE Delivery over ₹499. Fulfilled by Amazon.
+                    </p>
+                </div>
+                <div class="product-detail-card">
+                    <div class="product-detail-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/I/71eknZxZLmL._AC_UL320_SR320,320_.jpg" alt="">
+                    </div>
+                    <a class="product-detail-link" href="./product.html">2021 Apple MacBook Pro (16-inch//41.05 cm, Apple M1 Max chip with 10‑core CPU and 32‑core GPU, 32GB RAM, 1TB SSD) - Space Grey</a>
+                    <p>
+                        <strong class="product-price">₹ 3,99,999.00</strong>
+                    </p>
+                    <p class="product-deliver-by">Get it by <strong>Monday, August 22</strong> 
+                        FREE Delivery over ₹499. Fulfilled by Amazon.
+                    </p>
+                </div>
+                <div class="product-detail-card">
+                    <div class="product-detail-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/I/91k86Cdp1uL._AC_UL320_SR320,320_.jpg" alt="">
+                    </div>
+                    <a class="product-detail-link" href="./product.html">2021 Apple MacBook Pro (16-inch//41.05 cm, Apple M1 Max chip with 10‑core CPU and 32‑core GPU, 32GB RAM, 1TB SSD) - Space Grey</a>
+                    <p>
+                        <strong class="product-price">₹ 3,99,999.00</strong>
+                    </p>
+                    <p class="product-deliver-by">Get it by <strong>Monday, August 22</strong> 
+                        FREE Delivery over ₹499. Fulfilled by Amazon.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="section-4">
+        <div class="section-4-container">
+            <p>See personalized recommendations</p>
+            <button>Sign in</button>
+            <p>New customer? Start here.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <code>Made by Ranu Birle</code>
+    </footer>
+
+
+</body>
+</html>
